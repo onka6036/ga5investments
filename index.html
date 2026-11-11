@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GA5 Investments, LLC | Business Consulting</title>
+<meta name="description" content="GA5 Investments, LLC offers business consulting and legal services in Hallandale Beach, Florida.">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #17243a;
+    line-height: 1.7;
+}
+
+:root {
+    --navy: #101e35;
+    --gold: #c5a15d;
+    --light: #f5f6f8;
+    --white: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: var(--navy);
+    padding: 18px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span { color: var(--gold); }
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.menu-btn {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(10,24,45,.95), rgba(10,24,45,.70)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 720px;
+    padding: 90px 0;
+}
+
+.eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero p {
+    color: #dce2ea;
+    font-size: 17px;
+    max-width: 570px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 27px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+section { padding: 85px 0; }
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 37px;
+    margin: 12px 0;
+}
+
+.section-heading p { color: #687487; }
+
+/* ABOUT */
+
+.about { background: var(--light); }
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.about-content p {
+    color: #596579;
+    margin-top: 15px;
+}
+
+/* SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px;
+    border: 1px solid #e8eaf0;
+    border-radius: 8px;
+    background: white;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.service-icon {
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #687487;
+    font-size: 15px;
+}
+
+/* CALL TO ACTION */
+
+.cta {
+    background: var(--navy);
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #dce2ea;
+    margin-bottom: 25px;
+}
+
+/* CONTACT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.contact-card {
+    padding: 30px 15px;
+    background: var(--light);
+    border-radius: 8px;
+}
+
+.contact-card h3 { margin: 10px 0; }
+
+.contact-card p,
+.contact-card a {
+    color: #687487;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0a1527;
+    padding: 28px 0;
+    color: #dce2ea;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer span { color: var(--gold); }
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width: 768px) {
+
+    .menu-btn { display: block; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--navy);
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+        z-index: 10;
+    }
+
+    .nav-links.active { display: flex; }
+
+    .hero { min-height: 520px; }
+
+    .services-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section { padding: 65px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+<div class="container">
+<nav>
+
+<div class="logo">GA5 <span>INVESTMENTS</span></div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" onclick="closeMenu()">Home</a></li>
+<li><a href="#about" onclick="closeMenu()">About</a></li>
+<li><a href="#services" onclick="closeMenu()">Services</a></li>
+<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+<div class="container">
+
+<div class="hero-content">
+
+<div class="eyebrow">GA5 Investments, LLC</div>
+
+<h1>Building Stronger Businesses. Creating Better Opportunities.</h1>
+
+<p>
+Professional business consulting and legal services
+designed to help individuals and organizations move
+forward with confidence.
+</p>
+
+<a href="#contact" class="btn">Get In Touch →</a>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+<div class="container">
+
+<div class="about-content">
+
+<div class="eyebrow">Who We Are</div>
+
+<div class="section-heading">
+<h2>About GA5 Investments</h2>
+</div>
+
+<p>
+GA5 Investments, LLC is a professional services company
+based in Hallandale Beach, Florida, focused on business
+consulting and legal services.
+</p>
+
+<p>
+We aim to provide practical guidance, professional support,
+and solutions that help clients address business challenges,
+navigate important processes, and pursue their objectives.
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES SECTION -->
+
+<section id="services">
+<div class="container">
+
+<div class="section-heading">
+<div class="eyebrow">What We Do</div>
+<h2>Our Professional Services</h2>
+<p>Explore our consulting and legal service offerings.</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-icon">▦</div>
+<h3>Business Consulting</h3>
+<p>
+Professional business guidance, strategic planning,
+operational support, and business development
+solutions to help organizations grow.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">⚖</div>
+<h3>Legal Services</h3>
+<p>
+Legal support and related professional assistance,
+including documentation and guidance through
+applicable legal processes.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+<div class="container">
+
+<h2>Let's Discuss Your Next Step</h2>
+
+<p>
+Connect with GA5 Investments, LLC to learn more
+about our professional services.
+</p>
+
+<a href="tel:+19548769355" class="btn">Call Our Office</a>
+
+</div>
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact">
+<div class="container">
+
+<div class="section-heading">
+<div class="eyebrow">Get In Touch</div>
+<h2>Contact Our Office</h2>
+<p>We welcome your inquiries and look forward to hearing from you.</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<div class="service-icon">⌖</div>
+<h3>Our Location</h3>
+<p>
+2080 S Ocean Drive,<br>
+Hallandale Beach,<br>
+FL 33009
+</p>
+</div>
+
+<div class="contact-card">
+<div class="service-icon">☎</div>
+<h3>Phone Number</h3>
+<a href="tel:+19548769355">954-876-9355</a>
+</div>
+
+<div class="contact-card">
+<div class="service-icon">◷</div>
+<h3>Business Inquiries</h3>
+<p>Contact our office by phone for professional assistance.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container">
+<p>© <span id="year"></span> GA5 Investments, LLC. All Rights Reserved.</p>
+<p>Hallandale Beach, Florida, USA</p>
+</div>
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks")
+    .classList.toggle("active");
+}
+
+function closeMenu() {
+    document.getElementById("navLinks")
+    .classList.remove("active");
+}
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
